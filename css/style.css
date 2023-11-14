@@ -1,0 +1,214 @@
+:root{
+    --primary: rgb(3,105,161);
+    --primary-dark: rgb(11, 83, 122);
+    --secondary: rgb(225, 236, 251, 0.494);
+    --divisorGray: rgba(128, 128, 128, 0.541);
+    --informatica: rgb(22, 128, 199);
+    --automotores: rgb(243, 26, 26);
+    --electronica: rgb(231, 211, 33);
+    --electromecanica: rgb(253, 76, 6);
+    --gestion: green;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.fondoBlanco{
+    background-color: white !important;
+}
+
+.acceso{
+    background-color: var(--primary) !important;
+}
+
+html{
+    font-size: 16%;
+    font-family: 'Signika Negative', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+main{
+    height: 100vh;
+    background-color: var(--primary);
+    position: relative;
+}
+
+#presentation{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 15rem;
+    background-color: var(white);
+    overflow: hidden;
+    transition: all 0.5s;
+    border-bottom: solid 2px var(--divisorGray);
+}
+
+#section-presentation-text{
+    align-self:center;
+    padding: 30px;
+    padding-bottom: 60px;
+    position: relative;
+    display: grid;
+}
+
+#section-presentation-text h1{
+    font-size: 32rem;
+    text-align: center;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 5px;
+}
+#section-presentation-text h3{
+    font-size: 16rem;
+    color:  white;
+    text-align:center;
+    margin-top: 3rem;
+}
+
+
+#section-presentation-text p{
+    font-size: 9.2rem;
+    margin-top: 3rem;
+    color:var(--primary)
+}
+
+#section-presentation-button {
+    padding: 30px;
+}
+
+#section-presentation-button h3{
+    color: white;
+    text-align: center;
+    font-size: 13rem;
+}
+
+
+#container-button{
+    display: flex;
+    margin-top: 11px;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+
+
+
+
+.button {
+    background: white;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 6px 0 var(--primary-dark), 0 5px 15px -4px #000;
+    color: var(--primary);
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 800;
+    height: 50px;
+    padding: 5px;
+    text-transform: uppercase;
+    transition: box-shadow 0.2s ease-in-out, margin-top 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+    width: 150px;
+    position: absolute;
+    top: 128rem;
+}
+
+.button:hover,
+.button:focus {
+    opacity: 0.9;
+    outline: 0;
+}
+
+.button:active {
+    box-shadow: none;
+
+}
+
+#section-presentation-img img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+
+}
+
+.box {
+    --mask:
+    radial-gradient(28.97px at 40.95px 50%,#000 99%,#0000 101%) 0 calc(50% - 42px)/100% 84px,
+    radial-gradient(28.97px at -19.95px 50%,#0000 99%,#000 101%) 21px 50%/100% 84px repeat-y;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+
+.aulas-text{
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 6.5rem;
+    color: white;
+}
+
+
+.aulas:nth-child(12){
+    background: white !important;
+    display: grid;
+    gap: 5px;
+}
+
+.aulas:nth-child(35) {
+    background: white !important;
+    display: flex;
+    gap: 5px;
+}
+.bis{
+    background: rgb(3 105 161 / 58%);
+
+    width: 100%;
+    height: 100%;
+}
+
+/* MAPA */
+#planoColegio{
+    background-color: var(--primary);
+}
+
+@media (max-width:768px) {
+    #presentation{
+        grid-template-columns: 1fr;
+        border: none;
+    }
+
+    #section-presentation-text{
+        padding: 30px 30px 30px 30px;
+    }
+
+    #section-presentation-text h1{
+        font-size: 23rem;
+    }
+
+    #section-presentation-text h3{
+        font-size: 14rem;
+    }
+
+    #container-button{
+        margin-top: 12px;
+    }
+    .box {
+        --mask:
+          radial-gradient(43.24px at 50% 58.80px,#000 99%,#0000 101%) calc(50% - 42px) 0/84px 51% repeat-x,
+          radial-gradient(43.24px at 50% -37.8px,#0000 99%,#000 101%) 50% 21px/84px calc(51% - 21px) repeat-x,
+
+          radial-gradient(43.24px at 50% calc(100% - 58.80px),#000 99%,#0000 101%) calc(50% - 42px) 100%/84px 51% repeat-x,          radial-gradient(43.24px at 50% calc(100% + 37.80px),#0000 99%,#000 101%) 50% calc(100% - 21px)/84px calc(51% - 21px) repeat-x;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+      }
+}
