@@ -81,10 +81,6 @@ main{
     color:var(--primary)
 }
 
-#section-presentation-button {
-    padding: 30px;
-}
-
 #section-presentation-button h3{
     color: white;
     text-align: center;
