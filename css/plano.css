@@ -41,7 +41,11 @@
     font-size: 10rem;
     color: var(--primary);
     grid-area:10/4 ;
-    margin-left: -14px;
+    margin-left: -65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .union{

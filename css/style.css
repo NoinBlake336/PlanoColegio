@@ -242,3 +242,10 @@ table, th,td{
     background-color: rgba(3, 106, 161, 0.719);
     
   }
+
+  .subtitle{
+    margin: 13px 0px 13px 0px;
+    font-size: 10rem;
+    color: var(--primary);
+    text-align: center;
+  }
