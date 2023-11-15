@@ -5,6 +5,8 @@ const plano = document.getElementById('plano')
 const main = document.getElementById('main');
 const modal = document.querySelector(".modal-container")
 const modalButton = document.querySelector("#close-button")
+const modalTitle = document.querySelector("#modal-title")
+const modalDesc = document.querySelector("#modal-desc")
 botonVer.addEventListener("click",(e)=>{
     presentacion.classList.add('hidden')
     if(planoColegio.classList.contains('hidden')){
@@ -50,6 +52,30 @@ aulasAcceso.forEach( aula => {
       console.log(e.target.parentElement.id);
 
       modal.classList.remove("hidden")
+
+      switch (e.target.parentElement.id) {
+        case "Tt":
+          modalTitle.innerHTML= "Taller Torneria"
+          modalDesc.innerHTML="En este taller podrás encontrar los proyectos que los estudiantes realizaron con tornos."
+          break;
+        case "Te":
+          modalTitle.innerHTML= "Taller Electromecánica"
+          modalDesc.innerHTML="En este taller podrás encontrar los proyectos realizados por los estudiantes de la especialidad de Equipos e Instalaciones Electromecánicas"
+          break;
+        case "Ta":
+          modalTitle.innerHTML= "Taller Automotores"
+          modalDesc.innerHTML="En este taller podrás encontrar los proyectos realizados por los estudiantes de la especialidad de Automotores."
+          break;
+        case "Si":
+          modalTitle.innerHTML= "Sala de Informática"
+          modalDesc.innerHTML="En este laboratorio podras observar los proyectos realizados por los estudiantes de la especialidad de Informática."
+          break;
+      
+        default:
+          break;
+      }
+
+
 
     }
     else{

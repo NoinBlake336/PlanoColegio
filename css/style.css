@@ -284,6 +284,7 @@ table, th,td{
 
 #modal-desc{
     font-size: 7rem;
+    text-align: center;
 }
 #close-button {
     width: 100%;
