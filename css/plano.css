@@ -1,7 +1,6 @@
 #plano{
     width: 100%;
     height: 100vh;
-    border: solid;
     background: white;
     overflow: hidden;
     position: relative;
@@ -10,7 +9,8 @@
     grid-template-rows: repeat(14,1fr);
     justify-content: center;
     padding: 10px;
-    gap:10px;
+
+    position: relative;
 }
 #plano .aulas{
     width: 100%;
@@ -35,4 +35,88 @@
 
 .marcar{
     color: var(--primary);
+}
+
+#flechaEntrada{
+    font-size: 10rem;
+    color: var(--primary);
+    grid-area:10/4 ;
+    margin-left: -14px;
+}
+
+.union{
+    grid-area: 10/3;
+}
+
+.unionGrilla{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#cuadroAcceso{
+    background-color: var(--primary);
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 37px;
+    left: -8px;
+}
+
+.text-acceso{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+#accesoAula{
+    position: relative;
+}
+
+#presentacion-plano{
+    background-color: var(--primary);
+    height: 20rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+}
+
+.presentacion-plano_image{
+    width: 18rem;
+}
+
+#conoceLasAulas{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    width:100%;
+    height: 40rem;
+    margin-top: 10px;
+}
+
+#conoceLasAulas .borderImportancia{
+    width: 90%;
+    height: 100%;
+    justify-self: center;
+    border:var(--primary) 1px solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 7rem;
+ }
+
+ .borderImportancia p:nth-child(1){
+    color: var(--primary);
+ }
+
+.margen{
+    margin-left: 18px;
+}
+
+.no-margen{
+    margin: 0 !important; 
 }

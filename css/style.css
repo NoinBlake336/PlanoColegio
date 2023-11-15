@@ -173,9 +173,6 @@ main{
 }
 
 /* MAPA */
-#planoColegio{
-    background-color: var(--primary);
-}
 
 @media (max-width:768px) {
     #presentation{
@@ -208,3 +205,40 @@ main{
                 mask: var(--mask);
       }
 }
+
+#modal{
+    position: absolute;
+
+    background-color: #252525;
+    color:  white;
+    z-index: 1000;
+}
+table, th,td{
+    border: solid 1px;
+    
+    border-collapse: collapse;
+
+
+  }
+
+  table th{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  table td{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  #flechaEntrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  table  tr:nth-child(odd){
+    background-color: rgba(3, 106, 161, 0.719);
+    
+  }

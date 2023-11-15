@@ -31,7 +31,7 @@
 </head>
 <body>
     
-    <main>
+    <main id="main"> 
         <section id="presentation">
             <div id="section-presentation-text">
                 <h1>IPETyM 69</h1>
@@ -51,7 +51,61 @@
         </section>
 
         <section id="planoColegio" class="hidden">
+            <div id="presentacion-plano">
+                <img src="./images/logocolegio2.png" class="presentacion-plano_image" alt="">
+                <h1>Ipetym69</h1>
+            </div>
+
+            <div id="conoceLasAulas">
+                <div class="borderImportancia">
+                    <p>¡IMPORTANTE!</p>
+                    <p> Puedes seleccionar los cuadros disponibles para ver que proyectos se presentan en ese curso.</p>
+                </div>
+            </div>
+
+            <div style="padding: 5rem;">
+                <table style="width: 100%;" >
+                    <tr>
+                      <th>Aula</th>
+                      <th>Asignatura</th>
+                    </tr>
+                    <tr>
+                      <td> Aula 1</td>
+                      <td>Ciencias sociales</td>
+
+                    </tr>
+                    <tr>
+                      <td> Aula 2</td>
+                      <td>Economía</td>
+
+                    </tr>
+                    <tr>
+                      <td> Aula 6</td>
+                      <td>Informática</td>
+
+                    </tr>
+
+                    <tr>
+                      <td> Aula 9</td>
+                      <td>Lengua y Matemática</td>
+
+                    </tr>
+                    <tr>
+                        <td> Aula 10</td>
+                        <td>Ciencias Naturales</td>
+  
+                    </tr>
+                    <tr>
+                        <td> Aula 12</td>
+                        <td>Ciencias Naturales</td>
+  
+                    </tr>
+                  
+                  </table>
+            </div>
+
             <div id="plano">
+                
                 <div class="aulas">
                     <p class="text">
                         <span class="marcar">T.T:</span> Taller Electromecanica
@@ -163,9 +217,13 @@
                         2
                     </p>
                 </div>
-                <div class="aulas" >
+                <div class="aulas" id="accesoAula" >
                     <p class="text">
                         <span class="marcar">L:</span> Laboratorio
+                    </p>
+                    <p class="text text-acceso" style="white-space: nowrap;";">
+                        Aulas con proyectos.
+                        <div class="marcar" id="cuadroAcceso"></div> 
                     </p>
                 </div>
                 <div class="aulas">
@@ -223,6 +281,11 @@
                     </div>
                 </div>
                 <div class="aulas"></div>
+                <div class="union unionGrila"></div>
+                <div id="flechaEntrada" class="unionGrila">
+                    <i class="fa-solid fa-arrow-up fa-bounce"></i>
+                    <p style="font-size: 18px;">Entrada</p>
+                </div>
             </div> 
         </section>
     </main>
