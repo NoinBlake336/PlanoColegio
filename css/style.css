@@ -249,7 +249,9 @@ table, th,td{
   #modal{
     top: 10%;
     position: fixed;
-    width: 80%;
+
+    width: 90%;
+    height: auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
