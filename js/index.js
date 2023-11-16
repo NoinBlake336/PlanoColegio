@@ -27,12 +27,29 @@ const cuadros = document.querySelectorAll(".aulas");
 cuadros.forEach((aula,index )=>{
   aula.classList.add("a"+index)
 
-  if(index % 2 !== 0){
+
+  switch (index) {
+    case 32:
+        aula.classList.add("margen-top")
+      break;
+    case 33:
+        aula.classList.add("margen-top")
+      break;
+    case 34:
+        aula.classList.add("margen-top")
+      break;
+  
+    default:
+      break;
+  }
+  if(index % 2 !== 0 && index !== 33 ){
 
 
     indexes.forEach(a => a !== index ?  aula.classList.add("margen"): aula.classList.add("no-margen") )
   }
 });
+
+
 posicionesEnBlanco.forEach((posicion) => {
   let cont = 0;
    cont = cont +1;

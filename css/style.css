@@ -99,7 +99,6 @@ main{
 
 
 
-
 .button {
     background: white;
     border: 0;
@@ -157,13 +156,13 @@ main{
 .aulas:nth-child(12){
     background: white !important;
     display: grid;
-    gap: 5px;
+    
 }
 
 .aulas:nth-child(35) {
     background: white !important;
+  
     display: flex;
-    gap: 5px;
 }
 .bis{
     background: rgb(3 105 161 / 58%);
@@ -172,6 +171,9 @@ main{
     height: 100%;
 }
 
+.margen-top{
+    margin-top: 14px;
+}
 /* MAPA */
 
 @media (max-width:768px) {
