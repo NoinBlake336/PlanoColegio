@@ -210,7 +210,7 @@ main{
 
 
 table, th,td{
-    border: solid 1px;
+    border: solid 2px var(--primary);
     
     border-collapse: collapse;
 
@@ -223,7 +223,7 @@ table, th,td{
   }
   table td{
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
   }
 
@@ -231,6 +231,12 @@ table, th,td{
 
   table  tr:nth-child(odd){
     background-color: rgba(3, 106, 161, 0.719);
+    color: white;
+    
+  }
+  table  tr:nth-child(even){
+
+    color: var(--primary);
     
   }
 
@@ -269,6 +275,7 @@ table, th,td{
 #modal-title{
     font-size: 10rem;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 #modal-img{

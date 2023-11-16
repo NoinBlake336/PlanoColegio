@@ -115,6 +115,10 @@
     font-size: 7rem;
  }
 
+ .a35{
+    height: 100% !important;
+ }
+
  .borderImportancia p:nth-child(1){
     color: var(--primary);
  }
